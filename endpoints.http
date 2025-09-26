@@ -1,11 +1,29 @@
+### Teste servidor
+GET http://localhost:3000/
+
+### Listar todos os animais
 GET http://localhost:3000/animais
 
-###
+### Buscar um animal por ID
+GET http://localhost:3000/animais/1
 
+### Criar novo animal
 POST http://localhost:3000/animais
 Content-Type: application/json
 
 {
     "nome": "Macaco",
-    "especie": "MICO LEAO DOURADO"
+    "especie": "Babuíno"
 }
+
+### Atualizar um animal existente
+PUT http://localhost:3000/animais/1
+Content-Type: application/json
+
+{
+    "nome": "Mimi",
+    "especie": "Gato"
+}
+
+### Deletar um animal
+DELETE http://localhost:3000/animais/1
