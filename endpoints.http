@@ -1,0 +1,11 @@
+GET http://localhost:3000/animais
+
+###
+
+POST http://localhost:3000/animais
+Content-Type: application/json
+
+{
+    "nome": "Macaco",
+    "especie": "MICO LEAO DOURADO"
+}
